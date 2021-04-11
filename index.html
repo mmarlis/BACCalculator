@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+    <title>Blood Alcohol Content Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="BAC.js"></script>
+    <link rel="stylesheet" href="BAC.css">
+
+</head>
+
+<body>
+    <h1>Blood Alcohol Content Calculator</h1>
+
+<!--<form id="bacForm">-->
+    <label for="numBeers">Number of Beers Consumed</label>
+    <input type="number" name="numBeers" id="numBeers" value="0" min="0">
+
+    <br>
+
+  <div class="drink" id="beer">
+    One Beer has 0.54 oz of alcohol.
+  </div>
+
+    <br>
+
+    <label for="numWine">Glasses of Wine Consumed</label>
+    <input type="number" name="numWine" id="numWine" value="0" min="0">
+
+    <br>
+
+  <div class="drink" id="wine">
+    One glass of wine has 0.60 oz of alcohol.
+  </div>
+
+    <br>
+
+    <label for="numShots">Number of Shots Consumed</label>
+    <input type="number" name="numShots" id="numShots" value="0" min="0">
+
+    <br>
+
+  <div class="drink" id="shot">
+    One shot of liquor has 0.60 oz of alcohol.
+  </div>
+
+    <br>
+
+    <label for="weight">Your Weight in Pounds</label>
+    <input type="number" name="weight" id="weight" value="0" min="0">
+
+    <br>
+    <br>
+
+    <label for="hours">Hours Since Your First Drink</label>
+    <input type="number" name="hours" id="hours" value="0" min="0">
+
+  <div class="drink" id="output"></div>
+
+  <p>
+      <input type="submit" name="submitButton" id="submitButton" value="Calculate My BAC">
+  </p>
+
+  <p class="output">Your Blood Alcohol Level is: <span id="result"></span>%</p>
+<!--</form>-->
+
+</body>
+</html>
